@@ -1,0 +1,20 @@
+{
+    "name": "flymaps",
+    "displayName": "flymaps",
+    "description": "Convenient keymaps for data science work with Python, R, Markdown and Rmarkdown in VS Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "ctrl+.",
+                "command": "workbench.action.showCommands"
+            }
+        ]
+    }
+}
