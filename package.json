@@ -11,10 +11,35 @@
     ],
     "contributes": {
         "keybindings": [
-            {
-                "key": "ctrl+.",
-                "command": "workbench.action.showCommands"
-            }
-        ]
+    {
+        "key": "alt+-",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'r'",
+        "args": {
+            "text": " <- "
+        }
+    },{
+        "key": "cmd+i",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'r'",
+        "args": {
+            "text": " %in% "
+        }
+    },{
+    "key": "shift+cmd+m",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && editorLangId == 'r'",
+    "args": {
+        "snippet": "%>%$0"
+    }},
+    {
+    "key": "shift+cmd+m",
+    "command": "workbench.action.terminal.sendSequence",
+    "when": "terminalFocus",
+    "args": {
+        "text": "%>%"
+    }}
+]
+
     }
 }
