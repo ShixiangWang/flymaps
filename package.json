@@ -2,7 +2,7 @@
   "name": "flymaps",
   "displayName": "flymaps",
   "description": "Convenient keymaps for data science work with Python, R, Markdown and Rmarkdown in VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ShixiangWang",
   "repository": "https://github.com/ShixiangWang/flymaps",
   "engines": {
@@ -67,6 +67,22 @@
         "when": "editorTextFocus && editorLangId == 'markdown'",
         "args": {
           "snippet": "```\n$0\n```"
+        }
+      },
+      {
+        "key": "ctrl+alt+p+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'markdown'",
+        "args": {
+          "snippet": "```python\n$0\n```"
+        }
+      },
+      {
+        "key": "ctrl+alt+r+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'markdown'",
+        "args": {
+          "snippet": "```r\n$0\n```"
         }
       }
     ]
