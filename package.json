@@ -1,45 +1,74 @@
 {
-    "name": "flymaps",
-    "displayName": "flymaps",
-    "description": "Convenient keymaps for data science work with Python, R, Markdown and Rmarkdown in VS Code",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.40.0"
-    },
-    "categories": [
-        "Keymaps"
-    ],
-    "contributes": {
-        "keybindings": [
-    {
+  "name": "flymaps",
+  "displayName": "flymaps",
+  "description": "Convenient keymaps for data science work with Python, R, Markdown and Rmarkdown in VS Code",
+  "version": "0.0.1",
+  "publisher": "ShixiangWang",
+  "repository": "https://github.com/ShixiangWang/flymaps",
+  "engines": {
+    "vscode": "^1.38.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
         "key": "alt+-",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'r'",
         "args": {
-            "text": " <- "
+          "text": " <- "
         }
-    },{
+      },
+      {
+        "key": "alt+-",
+        "command": "workbench.action.terminal.sendSequence",
+        "when": "terminalFocus",
+        "args": {
+          "text": " <- "
+        }
+      },
+      {
         "key": "ctrl+i",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'r'",
         "args": {
-            "text": " %in% "
+          "text": " %in% "
         }
-    },{
-    "key": "ctrl+shift+m",
-    "command": "editor.action.insertSnippet",
-    "when": "editorTextFocus && editorLangId == 'r'",
-    "args": {
-        "snippet": " %>%$0"
-    }},
-    {
-    "key": "ctrl+shift+m",
-    "command": "workbench.action.terminal.sendSequence",
-    "when": "terminalFocus",
-    "args": {
-        "text": " %>%"
-    }}
-]
-
-    }
+      },
+      {
+        "key": "ctrl+i",
+        "command": "workbench.action.terminal.sendSequence",
+        "when": "terminalFocus",
+        "args": {
+          "text": " %in% "
+        }
+      },
+      {
+        "key": "ctrl+shift+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'r'",
+        "args": {
+          "snippet": " %>%$0"
+        }
+      },
+      {
+        "key": "ctrl+shift+m",
+        "command": "workbench.action.terminal.sendSequence",
+        "when": "terminalFocus",
+        "args": {
+          "text": " %>%"
+        }
+      },
+      {
+        "key": "ctrl+alt+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'markdown'",
+        "args": {
+          "snippet": "```\n$0\n```"
+        }
+      }
+    ]
+  }
 }
