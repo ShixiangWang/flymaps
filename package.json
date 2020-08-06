@@ -2,7 +2,7 @@
   "name": "flymaps",
   "displayName": "flymaps",
   "description": "Convenient keymaps for data science work with Python, R, Markdown and Rmarkdown in VS Code",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "ShixiangWang",
   "repository": "https://github.com/ShixiangWang/flymaps",
   "engines": {
@@ -18,7 +18,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'r'",
         "args": {
-          "text": " <- "
+          "text": "<-"
         }
       },
       {
@@ -26,7 +26,7 @@
         "command": "workbench.action.terminal.sendSequence",
         "when": "terminalFocus",
         "args": {
-          "text": " <- "
+          "text": "<-"
         }
       },
       {
@@ -34,7 +34,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'r'",
         "args": {
-          "text": " %in% "
+          "text": "%in%"
         }
       },
       {
@@ -42,7 +42,7 @@
         "command": "workbench.action.terminal.sendSequence",
         "when": "terminalFocus",
         "args": {
-          "text": " %in% "
+          "text": "%in%"
         }
       },
       {
@@ -50,7 +50,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'r'",
         "args": {
-          "snippet": " %>%$0"
+          "snippet": "%>%$0"
         }
       },
       {
@@ -58,7 +58,7 @@
         "command": "workbench.action.terminal.sendSequence",
         "when": "terminalFocus",
         "args": {
-          "text": " %>%"
+          "text": "%>%"
         }
       },
       {
