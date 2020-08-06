@@ -11,6 +11,10 @@
   "categories": [
     "Keymaps"
   ],
+  "keywords": [
+    "r",
+    "data science"
+  ],
   "contributes": {
     "keybindings": [
       {
